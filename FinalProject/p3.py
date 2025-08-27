@@ -5,7 +5,6 @@ from MyLCH import get_pdf_text, get_text_chunks, get_vectorstore, get_conversati
 st.markdown("# 학습자료로 질문하기")
 st.sidebar.markdown("다양한 형식의 학습 자료를 업로드한 후 이에 대해 질문할 수 있습니다.")
 
-
 user_uploads = st.file_uploader("파일을 업로드해주세요", accept_multiple_files=True)
 if user_uploads is not None:
     if st.button("Upload"):
