@@ -25,8 +25,6 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 AUDIO_DIR = Path("audio")
 AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
-st.info(f"업로드된 오디오 파일은 `{AUDIO_DIR}` 폴더에 저장됩니다.")
-
 # ---------- 유틸 함수 ----------
 def save_uploaded_file(uploaded_file) -> Path:
     """
@@ -114,7 +112,7 @@ if 'summary_text' not in st.session_state:
     st.session_state['summary_text'] = None
 
 # ---------- UI: 파일 업로드 ----------
-st.subheader("1) MP3 파일 업로드 (.mp3 권장)")
+st.subheader("1) MP3 파일 업로드")
 uploaded = st.file_uploader("오디오 파일 업로드 (.mp3, .wav, .m4a, .ogg, .webm 가능)", type=['mp3', 'wav', 'm4a', 'ogg', 'webm'])
 
 if uploaded:
@@ -133,11 +131,11 @@ if uploaded:
         st.info(f"저장된 파일: {saved_path}")
 
 # ---------- UI: 전사 버튼 ----------
-st.subheader("2) 전사(Transcription) — 업로드 파일을 전사하여 문장으로 분리")
+st.subheader("2) 글자로 추출")
 col1, col2 = st.columns([1,1])
 
 with col1:
-    if st.button("전사 및 문장화 실행"):
+    if st.button("추출하기"):
         if not st.session_state.get('saved_audio_path'):
             st.error("먼저 오디오 파일을 업로드하세요.")
         else:
@@ -153,7 +151,7 @@ with col1:
                 st.success("전사 및 문장화 완료.")
 
 with col2:
-    if st.button("전사 결과 초기화"):
+    if st.button("추출내용 초기화"):
         st.session_state['transcript_text'] = None
         st.session_state['sentences'] = []
         st.success("전사 결과를 초기화했습니다.")
@@ -202,19 +200,3 @@ if st.button("요약 생성"):
 if st.session_state.get('summary_text'):
     st.subheader(f"요약 ({summary_sentences}문장 요청)")
     st.write(st.session_state['summary_text'])
-
-# ---------- 보조: 저장된 오디오 목록 (선택) ----------
-st.markdown("---")
-if st.checkbox("저장된 오디오 파일 목록 보기"):
-    files = sorted(AUDIO_DIR.iterdir(), key=lambda p: p.stat().st_mtime, reverse=True)
-    if files:
-        for f in files:
-            st.write(f"- {f.name}  ({round(f.stat().st_size / 1024, 1)} KB)")
-            # 재생 UI
-            try:
-                with open(f, "rb") as fh:
-                    st.audio(fh.read(), format=f"audio/{f.suffix.lstrip('.')}")
-            except Exception:
-                st.write("플레이어 로드 실패")
-    else:
-        st.write("저장된 파일이 없습니다.")
