@@ -4,7 +4,7 @@ from langchain.memory import ConversationBufferMemory
 from streamlit_chat import message
 from MyLCH import getOpenAI  # 사용자의 LLM 래퍼
 
-st.markdown("채팅")
+st.markdown("채팅하기")
 st.sidebar.markdown("학습한 내용을 주제로 토론/토의하며 지식을 확장해요")
 
 # --- 세션 상태 초기화(일관된 키 사용) ---
