@@ -7,7 +7,7 @@ from MyLCH import process_text, getOpenAI
 import json, re, ast
 
 st.set_page_config(layout="wide")
-st.markdown("개념 학습하기")
+st.markdown("# 개념 학습하기")
 st.sidebar.markdown("요약 및 문제출제로 개념을 익히세요")
 
 # ------------------------

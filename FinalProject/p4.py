@@ -9,7 +9,7 @@ from openai import OpenAI  # openai>=1.0.0
 from MyLCH import getOpenAI  # 기존 프로젝트의 LLM 래퍼 (요약용)
 
 # ---------- 설정 ----------
-st.markdown("녹음 내용 요약하기")
+st.markdown("# 녹음 내용 요약하기")
 st.sidebar.markdown("녹음 내용을 글자로 전사하고 이를 요약할 수 있습니다.")
 
 # OpenAI API 키 확인
