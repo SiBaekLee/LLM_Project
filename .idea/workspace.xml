@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="834d3f41-5ed4-4023-ac59-a29bab566945" name="Changes" comment="0828 work 2 (refactor)">
-      <change afterPath="$PROJECT_DIR$/FinalProject/page8.py" afterDir="false" />
+    <list default="true" id="834d3f41-5ed4-4023-ac59-a29bab566945" name="Changes" comment="0828 work 3">
       <change beforePath="$PROJECT_DIR$/FinalProject/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756343804248</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="0828 work 3">
+      <option name="closed" value="true" />
+      <created>1756346897852</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1756346897852</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +289,7 @@
     <MESSAGE value="0827 work 9" />
     <MESSAGE value="0828 work 1" />
     <MESSAGE value="0828 work 2 (refactor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="0828 work 2 (refactor)" />
+    <MESSAGE value="0828 work 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="0828 work 3" />
   </component>
 </project>
