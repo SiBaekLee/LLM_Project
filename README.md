@@ -9,9 +9,9 @@ AI 스터디메이트와 함께라면 해결!
 AI 스터디메이트와 함께 시간도 벌고 학습 효율도 챙기세요
 > 
 - 팀원
-[김송희](https://github.com/songhee121) : 프로젝트 제작, 기술 고문
-[정태원](https://github.com/JungEH1) : 프로젝트 제작, 기술 고문
-[유진현](https://github.com/SiBaekLee) : 프로젝트 제작, 기술 고문
+    - [김송희](https://github.com/songhee121) : 프로젝트 제작, 기술 고문
+    - [정태원](https://github.com/JungEH1) : 프로젝트 제작, 기술 고문
+    - [유진현](https://github.com/SiBaekLee) : 프로젝트 제작, 기술 고문
 - 개발 기간
 2025.08.18 - 2025.08.29
 - 기술 스택
