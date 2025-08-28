@@ -6,8 +6,9 @@ page_4 = st.Page("p4.py", title="녹음 내용 요약하기", icon="🎙️")
 page_5 = st.Page("p5.py", title="설명문 보기", icon="📄️")
 page_8 = st.Page("p8.py", title="채팅하기", icon="💬")
 page_10 = st.Page("p10.py", title="찍어서 살펴보기", icon="📸")
+page_11 = st.Page("p11.py", title="스터디 플래너", icon="🗓️")
 
 
-page = st.navigation([page_2, page_3, page_4, page_5, page_8, page_10])
+page = st.navigation([page_2, page_3, page_4, page_5, page_8, page_10, page_11])
 
 page.run()
