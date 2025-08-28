@@ -1,5 +1,7 @@
 # Langchain LLM Team Project - AI 스터디메이트
 
+https://llmproject-zhdc4bbm5khcvwnhstm6av.streamlit.app/
+
 ## 개요
 
 ### AI 스터디메이트에 대하여
