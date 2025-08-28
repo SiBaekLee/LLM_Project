@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="834d3f41-5ed4-4023-ac59-a29bab566945" name="Changes" comment="0827 work 9">
-      <change afterPath="$PROJECT_DIR$/FinalProject/p11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="834d3f41-5ed4-4023-ac59-a29bab566945" name="Changes" comment="0828 work 2 (refactor)">
+      <change afterPath="$PROJECT_DIR$/FinalProject/page8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/p5.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/p5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/p8.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/p8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756284085823</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="0828 work 1">
+      <option name="closed" value="true" />
+      <created>1756343513260</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1756343513260</updated>
+    </task>
+    <task id="LOCAL-00022" summary="0828 work 2 (refactor)">
+      <option name="closed" value="true" />
+      <created>1756343804248</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1756343804248</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +280,8 @@
     <MESSAGE value="0827 work 7 (requirements)" />
     <MESSAGE value="0827 work 8" />
     <MESSAGE value="0827 work 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="0827 work 9" />
+    <MESSAGE value="0828 work 1" />
+    <MESSAGE value="0828 work 2 (refactor)" />
+    <option name="LAST_COMMIT_MESSAGE" value="0828 work 2 (refactor)" />
   </component>
 </project>
