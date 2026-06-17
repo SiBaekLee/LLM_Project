@@ -46,7 +46,7 @@ def progressBar(txt):
     # Progress Bar End -----------------------------------------
 
 def openAiModel():
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    client = OpenAI()
     return client
 def makeAudio(text, name):
     if not os.path.exists("audio"):
@@ -63,7 +63,7 @@ def makeAudio(text, name):
     response.stream_to_file("audio/"+name)
 
 def getOpenAIEmbeddings():
-    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", api_key=OPENAI_API_KEY)
+    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
     return embeddings
 def process_text(text):
     text_splitter = CharacterTextSplitter(
