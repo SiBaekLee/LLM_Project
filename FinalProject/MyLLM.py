@@ -15,7 +15,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 #GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 def openAiModel():
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    client = OpenAI()
     return client
 
 def makeMsg(system,user ):
@@ -28,7 +28,7 @@ def makeMsg(system,user ):
 def openAiModelArg(model, msgs):
     print(model)
     print(msgs)
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    client = OpenAI()
     response = client.chat.completions.create(
         model=model,
         messages=msgs
