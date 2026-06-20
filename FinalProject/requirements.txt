@@ -10,3 +10,4 @@ google-generativeai
 faiss-cpu
 PyPDF2
 python-dotenv
+beautifulsoup4
