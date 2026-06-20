@@ -12,3 +12,4 @@ PyPDF2
 python-dotenv
 beautifulsoup4
 streamlit-chat
+pypdf
